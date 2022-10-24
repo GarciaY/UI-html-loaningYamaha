@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Motorcycle Yamaha</title>
+    <link rel="stylesheet" href="assets/css/loaning-form.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <form id="myForm" action="" method="post" autocomplete = "off">
+      <h1 align = center> Application Form for Motorcycle Loan</h1>
+
+      <div style="text-align:center;">
+        <span class="step" id = "step-1">1</span>
+        <span class="step" id = "step-2">2</span>
+        <span class="step" id = "step-3">3</span>
+        <span class="step" id = "step-4">4</span>
+      </div>
+<!--Tab1 Starts Here-->
+      <div class="tab" id = "tab-1">
+       
+        <h2><b> Personal Details</b></h2>
+        <label>Full Name:</label>
+        <input type="text" name="fname" placeholder="First Name, Middle Name, Lastname" class="ipt"/>
+        <label>Age:</label>
+        <input type="number" name="nat" class="ipt3"/>
+
+        <label>Gender: </label>
+         <select id="gender" >
+            <option value=""></option>
+            <option value="man">Male</option>
+            <option value="woman">Female</option>
+            <option value="another">Others</option>
+</select>
+<br>
+        <label>Nationality:</label>
+        <input type="text" name="nat" class="ipt2"/>
+
+        <label>Birthdate:</label>
+        <input type="date" name="nat" class="ipt2"/>
+        <label>Birthplace:</label>
+        <input type="text" name="nat" class="ipt16"/>	
+<br>
+        <label>Marital Status:</label>
+         <select id="status" class="ipt4">
+            <option value=""></option>
+            <option value="single">Single</option>
+            <option value="married">Married</option>
+            <option value="widowed">Widow/Widowed</option>
+            <option value="separated">Legally Separated</option>
+            <option value="livein">Live in</option>
+            
+</select>
+        <label>TIN:</label>
+        <input type="number" name="nat" class="ipt4"/>
+        <label>SSS/GSIS No:</label>
+        <input type="number" name="nat" class="ipt4"/>
+        <label>No. of children:</label>
+        <input type="number" name="nat" class="ipt15"/>
+    
+    <br>
+    <label>Educational Attainment: </label>
+         <select id="educ" class="ipt5">
+            <option value=""></option>
+            <option value="Egrad">Elementary Grad</option>
+            <option value="Hgrad">High School Grad</option>
+            <option value="Cugrad">College Undergrad</option>
+            <option value="Cgrad">College Grad</option>
+            <option value="vocational">Vocational</option>
+            <option value="doctorate">Postgrad/Doctorate</option>
+</select>
+    
+    <label>Type of Borrower: </label>
+         <select id="borrower" class="ipt5">
+            <option value=""></option>
+        <optgroup label="Individual">
+            <option value="employed">Workers in formal Sector (Employed)</option>
+            <option value="selfemployed">Workers in Informal Sector (Self-Employed)</option>
+            <option value="OFW">Migrant Workers (OFW)</option>
+            <option value="pensioner">Pensioner</option>
+            <option value="driver">Driver</option>
+            <option value="farmer">Farmer</option>
+            <option value="fisherfolk">Fisherfolk</option>
+            <option value="recipient">Recipient of Remittance</option>
+        <optgroup label="Engaged in Business">
+            <option value="proprietorship">Single Proprietorship</option>
+            <option value="partnership">Partnership</option>
+            <option value="corporate">Fisherfolk</option>
+
+</select>
+        <br>
+        
+        <label>Mother Full Maiden Name:</label>
+        <input type="text" name="mfname" placeholder="First Name, Middle Name, Lastname" />
+        <label>No. of Dependents:</label>
+        <input type="number" name="nat" class="ipt14"/>
+        <br>
+        
+        <h2><b> Address Details</b></h2>
+        <label>Present Address:</label>
+        <input type="text" name="paddress" placeholder=" Street/Barangay/City/Municipalities/Province/Zip Code" class="ipt8"/>
+        
+        <label>Residence Ownership:</label>
+         <select id="borrower" >
+            <option value=""></option>
+            <option value="owned">Owned</option>
+            <option value="parent">Living with Parents</option>
+            <option value="relatives">Living with Relatives</option>
+            <option value="boarder">Bed Spacer/Border</option>
+            <option value="company">Company-provided quarters</option>
+            <option value="rented">Rented</option>
+            <option value="other">Others</option>
+
+</select>
+<br>
+        
+        <label>Home Tel No.</label>
+        <input type="number" name="nat" />
+        
+        <label>Mobile Phone:</label>
+         <select id="phone" >
+            <option value=""></option>
+            <option value="postpaid">Postpaid</option>
+            <option value="prepaid">Prepaid</option>
+
+</select>
+        <label>Lenght of Stay:</label>
+        <input type="text" name="lenght" placeholder="years/months" />
+        <br>
+        <label class="my-1">Permanent Address:</label>
+        <input type="text" name="paddress" placeholder=" Street/Barangay/City/Municipalities/Province/Zip Code" class="ipt13"/>
+        <br>
+        <b>
+        <label>Social Media Account:</label>
+        </b>
+        <br>
+        <label> Facebook:</label>
+        <input type="text" name="fb" />
+        <br>
+        <label>Instagram:</label>
+        <input type="text" name="ig" />
+        <br>
+        <label class="my-4">Others:</label>
+        <input type="text" name="others" />
+        <br>
+        
+        
+
+        <div class="index-btn-wrapper">
+          <div class="index-btn custom-btn btn-15" onclick="run(1, 2);">
+            Next
+          </div>
+        
+        </div>
+      </div>
+<!--Tab1 Ends Here-->
+<!--Tab2 Starts Here-->
+      <div class="tab" id = "tab-2">
+       
+
+        <h2>Employment/Business Details</h2>
+        <label>Name of Employer / Business:</label>
+        <input type="text" name="fname" placeholder="First Name, Middle Name, Lastname" />
+        
+        <label>Nature of Business: </label>
+        <input type="text" name="nature" />
+            <br>
+        
+        <label>Number of Years in Business:</label>
+        <input type="number" name="nat" />
+
+        <label>Employer/Business Address:</label>
+        <input type="text" name="nat" />
+        <br>
+        <label >Is your business registered:</label>
+        <br>
+        <label for="R1">YES:</label>
+        <input TYPE="Radio" Name="registered" ID="R1" Value="yes">
+        <label for="R2">NO:</label>
+        <input TYPE="Radio" Name="registered" ID="R1" Value="no">
+
+<br>
+        
+        <h2> <b>Spouse Details</b></h2>
+        <label>Full Name:</label>
+        <input type="text" name="fname" placeholder="First Name, Middle Name, Lastname" />
+        <label>Age:</label>
+        <input type="number" name="nat" class="ipt3"/>
+        
+        <label>Gender: </label>
+         <select id="gender" >
+            <option value=""></option>
+            <option value="man">Male</option>
+            <option value="woman">Female</option>
+            <option value="another">Others</option>
+</select>
+<br>
+        
+        <label>Nationality:</label>
+        <input type="text" name="nat" />
+    
+        <label>Birthdate:</label>
+        <input type="date" name="nat" />
+        <label>Birthplace:</label>
+        <input type="text" name="nat" />	
+        
+        <div class="index-btn-wrapper">
+          <div class="index-btn custom-btn btn-15" onclick="run(2, 1);">Previous</div>
+          <div class="index-btn custom-btn btn-15" onclick="run(2, 3);">Next</div>
+        </div>
+      </div>
+<!--Tab2 Ends Here-->
+<!--Tab3 Start Here-->
+      <div class="tab" id = "tab-3">
+        <!-- upload file 1 -->
+
+        <h2 class="modal-title">Upload Files</h2>
+        <p class="modal-desc">
+            Attach your GSIS ID below:
+        </p>
+
+        <button class="upload-area">
+            <span class="upload-icon">
+                <svg width="40"
+                     height="40"
+                     viewBox="0 0 24 24">
+                    <path d="M19.35,10.04C18.67,6.59 15.64,4 12,4C9.11,4 6.6,5.64 5.35,8.04C2.34,8.36 0,10.91 0,14A6,6 0 0,0 6,20H19A5,5 0 0,0 24,15C24,12.36 21.95,10.22 19.35,10.04M19,18H6A4,4 0 0,1 2,14C2,11.95 3.53,10.24 5.56,10.03L6.63,9.92L7.13,8.97C8.08,7.14 9.94,6 12,6C14.62,6 16.88,7.86 17.39,10.43L17.69,11.93L19.22,12.04C20.78,12.14 22,13.45 22,15A3,3 0 0,1 19,18M8,13H10.55V16H13.45V13H16L12,9L8,13Z" /></svg>
+            </span>
+
+            <span class="upload-title">
+                Drag File(s) here to Upload
+            </span>
+
+            <span class="upload-desc">
+                Alternatively, you can select a file(s) by Clicking <strong>Here</strong>
+            </span>
+        </button>
+
+        <div class="index-btn-wrapper">
+            
+          <button class="custom-btn2 btn-15" style="margin:10px;"> Upload</button>
+         	</div>
+
+           <!-- upload file 2 -->
+
+        <p class="modal-desc">
+            Attach your SSS ID below:
+        </p>
+
+        <button class="upload-area">
+            <span class="upload-icon">
+                <svg width="40"
+                     height="40"
+                     viewBox="0 0 24 24">
+                    <path d="M19.35,10.04C18.67,6.59 15.64,4 12,4C9.11,4 6.6,5.64 5.35,8.04C2.34,8.36 0,10.91 0,14A6,6 0 0,0 6,20H19A5,5 0 0,0 24,15C24,12.36 21.95,10.22 19.35,10.04M19,18H6A4,4 0 0,1 2,14C2,11.95 3.53,10.24 5.56,10.03L6.63,9.92L7.13,8.97C8.08,7.14 9.94,6 12,6C14.62,6 16.88,7.86 17.39,10.43L17.69,11.93L19.22,12.04C20.78,12.14 22,13.45 22,15A3,3 0 0,1 19,18M8,13H10.55V16H13.45V13H16L12,9L8,13Z" /></svg>
+            </span>
+
+            <span class="upload-title">
+                Drag File(s) here to Upload
+            </span>
+
+            <span class="upload-desc">
+                Alternatively, you can select a file(s) by Clicking <strong>Here</strong>
+            </span>
+        </button>
+
+        <div class="index-btn-wrapper">
+          
+          <button class="custom-btn2 btn-15" style="margin:10px;"> Upload</button>
+         	</div>
+
+                <!-- upload file 2 -->
+
+        <p class="modal-desc">
+          Attach your SSS ID below:
+      </p>
+
+      <button class="upload-area">
+          <span class="upload-icon">
+              <svg width="40"
+                   height="40"
+                   viewBox="0 0 24 24">
+                  <path d="M19.35,10.04C18.67,6.59 15.64,4 12,4C9.11,4 6.6,5.64 5.35,8.04C2.34,8.36 0,10.91 0,14A6,6 0 0,0 6,20H19A5,5 0 0,0 24,15C24,12.36 21.95,10.22 19.35,10.04M19,18H6A4,4 0 0,1 2,14C2,11.95 3.53,10.24 5.56,10.03L6.63,9.92L7.13,8.97C8.08,7.14 9.94,6 12,6C14.62,6 16.88,7.86 17.39,10.43L17.69,11.93L19.22,12.04C20.78,12.14 22,13.45 22,15A3,3 0 0,1 19,18M8,13H10.55V16H13.45V13H16L12,9L8,13Z" /></svg>
+          </span>
+
+          <span class="upload-title">
+              Drag File(s) here to Upload
+          </span>
+
+          <span class="upload-desc">
+              Alternatively, you can select a file(s) by Clicking <strong>Here</strong>
+          </span>
+      </button>
+
+      <div class="index-btn-wrapper">
+          
+          <button class="custom-btn2 btn-15" style="margin:10px;"> Upload</button>
+         </div>
+
+        <div class="index-btn-wrapper">
+          <div class="index-btn custom-btn btn-15" onclick="run(3, 2);">Previous</div>
+          <div class="index-btn custom-btn btn-15" onclick="run(3, 4);">Next</div>
+        </div>
+      </div>
+<!--Tab3 Ends Here-->
+<!--Tab4 Start Here-->
+
+      <div class="tab" id = "tab-4">
+      
+        <h2><b> Loan Details</b></h2>
+    </b>
+    <br>
+    <label> Unit:</label>
+    <input type="text" name="fb" disabled value="RX 100"/>
+    <br>
+    <label>Unit Color:</label>
+    <select>
+      <option selected disabled>Select an option</option>
+      <option>Black</option>
+      <option>Red</option>
+    </select>
+    <br>
+    <label>Downpayment Amount:</label>
+    <input type="text" name="others" disabled value="P 100.00"/>
+    <br>
+    <label>Monthly Payment Amount:</label>
+    <input type="text" name="fb" disabled value="P 3.00"/>
+    <br>
+    <label>Time Period:</label>
+    <input type="text" name="ig" />
+    
+        <div class="index-btn-wrapper">
+          <!-- <button class="index-button custom-btn btn-15" onclick="run(4,3);">Previous</button> -->
+          <div class="index-btn custom-btn btn-15" onclick="run(4, 3);">Previous</div>
+          <div class="index-btn custom-btn btn-15" onclick="run(4, 5);">Next</div>
+        </div>
+      </div>
+<!--Tab4 End Here-->
+<!--Tab5 Starts Here-->
+      <div class="tab" id = "tab-5">
+        <div class="index-btn-wrapper">
+         
+          <div class="index-btn custom-btn btn-15" onclick="run(5, 4);">Previous</div>
+          <button class = "index-btn custom-btn2 btn-15" type="submit" name="submit" >Submit</button>
+        </div>
+      </div>
+<!--Tab5 End Here-->
+    </form>
+
+    <script>
+      // Default tab
+      $(".tab").css("display", "none");
+      $("#tab-1").css("display", "block");
+
+      function run(hideTab, showTab){
+        if(hideTab < showTab){ // If not press previous button
+          // Validation if press next button
+          var currentTab = 0;
+          x = $('#tab-'+hideTab);
+          y = $(x).find("input")
+        //   for (i = 0; i < y.length; i++){
+        //     if (y[i].value == ""){
+        //       $(y[i]).css("background", "#ffdddd");
+        //       return false;
+        //     }
+        //   }
+        }
+
+        // Progress bar
+        for (i = 1; i < showTab; i++){
+          $("#step-"+i).css("opacity", "1");
+        }
+
+        // Switch tab
+        $("#tab-"+hideTab).css("display", "none");
+        $("#tab-"+showTab).css("display", "block");
+        $("input").css("background", "#fff");
+      }
+    </script>
+  </body>
+</html>

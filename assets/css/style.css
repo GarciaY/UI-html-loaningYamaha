@@ -1,0 +1,210 @@
+
+
+body{
+	line-height: 30px;
+	color: #576574;
+}
+
+/* Notification css */
+.icon-button {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 50px;
+	height: 50px;
+	color: #333333;
+	background: #dddddd;
+	border: none;
+	outline: none;
+	border-radius: 50%;
+	margin-right: 10px;
+  }
+  
+  .icon-button:hover {
+	cursor: pointer;
+  }
+  
+  .icon-button:active {
+	background: #cccccc;
+  }
+  
+  .icon-button__badge {
+	position: absolute;
+	top: -5px;
+	right: -5px;
+	width: 23px;
+	height: 23px;
+	background: red;
+	color: #ffffff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+  }
+/* Notification css ends */
+.custom-btn {
+	width: 130px;
+	height: 40px;
+	color: #fff;
+	border-radius: 5px;
+	padding: 10px 25px;
+	font-family: 'Lato', sans-serif;
+	/* font-weight: 100; */
+	background: transparent;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	position: relative;
+	display: inline-block;
+	 box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+	 7px 7px 20px 0px rgba(0,0,0,.1),
+	 4px 4px 5px 0px rgba(0,0,0,.1);
+	outline: none;
+  }
+ 
+.btn-15 {
+	background:  #663dff;
+	border: none;
+	z-index: 1;
+  }
+  /* .btn-15:after {
+	position: absolute;
+	content: "";
+	width: 0;
+	height: 100%;
+	top: 0;
+	right: 0;
+	z-index: -1;
+	background-color:#b621fe ;
+	border-radius: 5px;
+	 box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+	 7px 7px 20px 0px rgba(0,0,0,.1),
+	 4px 4px 5px 0px rgba(0,0,0,.1);
+	transition: all 0.3s ease;
+  } */
+  .btn-15:hover {
+	color: #fff;
+	opacity: 0.8;
+  }
+  .btn-15:hover:after {
+	left: 0;
+	width: 100%;
+  }
+  .btn-15:active {
+	top: 2px;
+  }
+
+  .login-btn {
+	width: 130px;
+	height: 40px;
+	line-height: 42px;
+	padding: 0;
+	border: none;
+	background: #663dff;
+  /* background: ; */
+  /* linear-gradient(0deg, #b621fe 0%, #663dff 100%) */
+  }
+  .login-btn:hover {
+	color: #663dff;
+	background: transparent;
+	 box-shadow:none;
+  }
+  .login-btn:before,
+  .login-btn:after{
+	content:'';
+	position:absolute;
+	top:0;
+	right:0;
+	height:2px;
+	width:0;
+	background: #663dff;
+	box-shadow:
+	 -1px -1px 5px 0px #fff,
+	 7px 7px 20px 0px #0003,
+	 4px 4px 5px 0px #0002;
+	transition:400ms ease all;
+  }
+  .login-btn:after{
+	right:inherit;
+	top:inherit;
+	left:0;
+	bottom:0;
+  }
+  .login-btn:hover:before,
+  .login-btn:hover:after{
+	width:100%;
+	transition:800ms ease all;
+  }
+  
+  
+/*CSS for Banner-Slider Section*/
+.banner-slider{
+	margin-top: 4rem;
+}
+
+/*CSS for About Section*/
+.about{
+	margin-top: 5rem;
+}
+
+.about h2{
+	text-transform: uppercase;
+}
+
+.about .about-box{
+	margin: 2rem 0;
+	padding: 3rem 2rem;
+	box-shadow: 0 0 4px 2px #c8d6e5;
+}
+.about .about-text{
+	margin-top: 3rem;
+}
+.about .about-text h5{
+	margin-bottom: 1rem;
+}
+
+/*CSS for Services Section*/
+.services{
+	margin-top: 5rem;
+}
+.services h2{
+	margin-bottom: 2rem;
+	text-transform: uppercase;
+}
+
+.service-text{
+	position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 2px 1px #7f8fa6;
+}
+
+/*CSS for motorcycless Section*/
+.motorcycle{
+	margin-top: 5rem;
+	padding: 2rem 0 4rem 0;
+	background: url(../../img/service-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+
+}
+.motorcycle h2{
+	margin-bottom: 2rem;
+	text-transform: uppercase;
+	color: white;
+}
+.contact{
+	margin-top: 5rem;
+}
+.contact i{
+	font-size: 1.5rem;
+	margin-top: 1rem;
+}
+
+/*CSS for Footer Section*/
+footer{
+	margin-top: 5rem;
+}

@@ -1,0 +1,15 @@
+.motorcycles{
+	margin-top: 5rem;
+	padding: 2rem 0 4rem 0;
+	background: hsl(210, 60%, 98%);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+
+}
+
+.motorcycles h2{
+	margin-bottom: 2rem;
+	text-transform: uppercase;
+	color: black;
+}

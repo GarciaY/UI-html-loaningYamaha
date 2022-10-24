@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="assets/fontawesome/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/profile-page.css" />
+   
+    <title>profile page</title>
+  </head>
+  
+<body>
+
+     <!--Header Starts Here-->
+     <header id="home">
+      
+      <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <div class="container top-menu">
+          <div>
+            <a class="navbar-brand" href="index.html">
+              <img src="img/logo2.png" class="img-fluid" width="150px">
+            </a>
+          </div>
+
+          <div class="text-right">
+          <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#Website-Menu" aria-controls="Website-Menu" aria-expanded="false" aria-label="Toggle Navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="Website-Menu">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="main.html">Home</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="loaning-form.html">Loan Details</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Installment Agreement</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="notif-page.html" class="nav-link">
+                  <button type="button" class="icon-button">
+                    <span class="material-icons">notifications</span>
+                    <span class="icon-button__badge">2</span>
+                  </button>
+                </a>
+             
+              </li>
+              <li class="nav-item" style="margin-left: 5px;">
+               <a href="profile-page.html"><button class="custom-btn login-btn navbar-light "><span>Account</span></button></a> 
+              </li>
+              <li class="nav-item" style="margin-left: 5px;">
+            <a href="index.html">  <button class="custom-btn login-btn"><span>Logout</span></button></a>   
+              </li>
+            </ul>
+          </div>
+          </div>
+
+        </div>
+      </nav>
+      
+    </header>
+    <!--Header Ends Here-->
+
+    <div class="container rounded bg-white mt-5 mb-5">
+        <div class="row">
+            <div class="col-md-3 border-right">
+                <div class="d-flex flex-column align-items-center text-center p-3 py-5"><img class="rounded-circle mt-5" width="150px" src="https://st3.depositphotos.com/15648834/17930/v/600/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg">
+                  <span class="font-weight-bold">Yamaha</span>
+                  <span class="text-black-50">yamaha@mail.com</span>
+                  <span> </span>
+                </div>
+            </div>
+            <div class="col-md-5 border-right">
+                <div class="p-3 py-5">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h4 class="text-right">Account Settings</h4>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-md-6"><label class="labels">First Name</label><input type="text" class="form-control" placeholder="First name" value=""></div>
+                        <div class="col-md-6"><label class="labels">Surname</label><input type="text" class="form-control" value="" placeholder="Last name"></div>
+                        
+                    </div>
+                    <div class="row mt-3">
+                       
+                        <div class="col-md-12">
+                          <label class="labels">Change Email</label>
+                          <input type="text" class="form-control" placeholder="Email" value="">
+                        </div>
+                       
+                       
+                    </div>
+                    <div class="row mt-3">
+                      <div class="col-md-6"><label class="labels">Change Password</label><input type="text" class="form-control" placeholder="New Password" value=""></div>
+                      <div class="col-md-6"><label class="labels">Confirm Password</label><input type="text" class="form-control" value="" placeholder="Confirm Password"></div>
+                    </div>
+                    <div class="mt-5 text-center">
+                        <button class="btn btn-primary profile-button" style="margin-bottom: 10px ;" type="button">Save Profile</button>
+                    </div>
+                </div>
+            </div>
+         
+        </div>
+
+               
+    <div class="w3-container">
+        <center>
+           <h2><b>Colored Table Heading</b></h2>
+           </center>
+          <br>
+         
+           <table class="w3-table-all" style="margin: 20px;">
+             <thead>
+               <tr class="w3-transparent">
+                 <th>Installment<br>No.</th>
+                 <th>Date</th>
+                 <th>Principal<br>Amount</th>
+                 <th>Interest<br>Amount</th>
+                 <th>Penalty<br>Amount</th>
+                 <th>Total<br>Amount</th>
+                 <th>Paid<br>Amount</th>
+                 <th>Balance<br>Amount</th>
+                 <th>Action</th>
+               </tr>
+             </thead>
+             <tr>
+               <td>Jill</td>
+               <td>Smith</td>
+               <td>50</td>
+               <td>50</td>
+               <td>50</td>
+               <td>50</td>
+               <td>50</td>
+               <td>50</td>
+               <td>50</td>
+             </tr>
+             <tr>
+               <td>Eve</td>
+               <td>Jackson</td>
+               <td>94</td>
+               <td>94</td>
+               <td>94</td>
+               <td>94</td>
+               <td>94</td>
+               <td>94</td>
+               <td>94</td>
+             </tr>
+             <tr>
+               <td>Adam</td>
+               <td>Johnson</td>
+               <td>67</td>
+               <td>67</td>
+               <td>67</td>
+               <td>67</td>
+               <td>67</td>
+               <td>67</td>
+               <td>67</td>
+             </tr>
+           </table>
+         </div>
+    </div>
+
+    
+
+
+
+</body>
+</html>
